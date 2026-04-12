@@ -10,7 +10,7 @@
       "git:hexsha": "b54922fd7394c36cdc390fd21aaee99206ebc361",
       "repolex:parseStatus": "parsed",
       "git:tagName": "v0.4.10",
-      "repolex:parsedAt": "2026-04-12T11:57:54.896463+00:00"
+      "repolex:parsedAt": "2026-04-12T12:33:19.935849+00:00"
     },
     {
       "@id": "https://repolex.ai/r/astral-sh/ruff/commit/27e9d1fe3e60a0b6731ba3be103a48a33b8e3a7c",
