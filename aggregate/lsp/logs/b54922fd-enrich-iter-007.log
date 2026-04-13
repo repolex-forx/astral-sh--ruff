@@ -1,0 +1,51 @@
+[2026-04-13T17:07:12Z] === ENRICH ITERATION 7 START | repo=astral-sh/ruff sha=b54922fd ===
+[2026-04-13T17:07:12Z] [iter=7] PHASE START: enrich repo=astral-sh/ruff sha=b54922fd runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/b54922fd-enrich-iter-007.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/b54922fd7394c36cdc390fd21aaee99206ebc361.nq.gz
+[2026-04-13T17:07:12Z] [iter=7] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-13T17:09:21Z] [iter=7] AST store loaded triples=11609282 load_secs=124 mem_mb=1094 MB
+[2026-04-13T17:09:21Z] [iter=7] Step 2: Finding LSP targets mem_mb=1094 MB
+[2026-04-13T17:09:46Z] [iter=7] LSP targets found call_sites=82537 imports=7864 extends=425 implements=349 secs=25
+[2026-04-13T17:09:53Z] [iter=7] Loaded checkpoint partial graph triples=165777
+[2026-04-13T17:10:16Z] [iter=7] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1094 MB
+[2026-04-13T17:11:26Z] [iter=7] Position index built positions=795749 nodes_with_types=974884 secs=71 mem_mb=2444 MB
+[2026-04-13T17:11:26Z] [iter=7] Step 3: Starting LSP resolution mem_mb=2444 MB already_completed_types=[] already_completed_files=158
+[2026-04-13T17:11:26Z] [iter=7] Resolving target type target_type=call_site count=82537
+[2026-04-13T17:12:41Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=5.5 files_done=0 resolved=0 errors=0 current=crates/ruff_linter/src/rules/flake8_bugbear/rules/unused_loop_control_variable.rs
+[2026-04-13T17:16:11Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=9.0 files_done=1 resolved=4 errors=35 current=crates/red_knot/src/ast_ids.rs
+[2026-04-13T17:19:31Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=12.3 files_done=2 resolved=45 errors=76 current=crates/ruff_python_codegen/src/generator.rs
+[2026-04-13T17:38:24Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=31.2 files_done=3 resolved=304 errors=313 current=crates/ruff_linter/src/rule_selector.rs
+[2026-04-13T17:47:00Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=39.8 files_done=4 resolved=362 errors=413 current=crates/ruff_python_trivia/src/tokenizer.rs
+[2026-04-13T17:53:29Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=46.3 files_done=5 resolved=440 errors=488 current=crates/ruff_linter/src/rules/refurb/rules/sorted_min_max.rs
+[2026-04-13T17:55:39Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=48.4 files_done=6 resolved=450 errors=513 current=crates/red_knot_python_semantic/src/module.rs
+[2026-04-13T17:59:34Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=52.4 files_done=7 resolved=476 errors=558 current=crates/ruff_linter/src/rules/flake8_pytest_style/rules/unittest_assert.rs
+[2026-04-13T18:08:35Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=61.4 files_done=8 resolved=607 errors=660 current=crates/ruff_linter/src/rules/ruff/rules/mutable_class_default.rs
+[2026-04-13T18:10:45Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=63.5 files_done=9 resolved=608 errors=685 current=crates/ruff_linter/src/rules/pygrep_hooks/rules/blanket_type_ignore.rs
+[2026-04-13T18:13:39Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=66.5 files_done=10 resolved=624 errors=718 current=crates/ruff_macros/src/combine_options.rs
+[2026-04-13T18:14:29Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=67.3 files_done=11 resolved=634 errors=727 current=crates/ruff_linter/src/rules/flake8_return/visitor.rs
+[2026-04-13T18:16:18Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=69.1 files_done=12 resolved=650 errors=748 current=crates/ruff_linter/src/rules/flake8_return/rules/function.rs
+[2026-04-13T18:36:17Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=89.1 files_done=13 resolved=686 errors=978 current=crates/ruff_db/src/source.rs
+[2026-04-13T18:39:18Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=92.1 files_done=14 resolved=703 errors=1012 current=crates/red_knot/src/typeshed_versions.rs
+[2026-04-13T18:44:23Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=97.2 files_done=15 resolved=789 errors=1070 current=crates/ruff_linter/src/message/text.rs
+[2026-04-13T18:52:05Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=104.9 files_done=16 resolved=819 errors=1158 current=crates/ruff_formatter/src/format_element.rs
+[2026-04-13T18:57:19Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=110.1 files_done=17 resolved=880 errors=1218 current=crates/ruff_dev/src/generate_docs.rs
+[2026-04-13T19:02:39Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=115.4 files_done=18 resolved=909 errors=1280 current=crates/ruff_linter/src/rules/ruff/rules/function_call_in_dataclass_default.rs
+[2026-04-13T19:04:27Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=117.3 files_done=19 resolved=911 errors=1301 current=crates/ruff_python_formatter/src/other/parameters.rs
+[2026-04-13T19:19:00Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=131.8 files_done=20 resolved=936 errors=1469 current=crates/ruff_linter/src/message/azure.rs
+[2026-04-13T19:19:32Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=132.3 files_done=21 resolved=939 errors=1475 current=crates/ruff_server/src/server/api/notifications/did_change.rs
+[2026-04-13T19:20:13Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=133.0 files_done=22 resolved=940 errors=1483 current=crates/ruff_linter/src/rules/pyupgrade/rules/deprecated_unittest_alias.rs
+[2026-04-13T19:21:11Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=134.0 files_done=23 resolved=945 errors=1494 current=crates/ruff_python_ast/src/helpers.rs
+[2026-04-13T20:04:52Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=177.7 files_done=24 resolved=1022 errors=1998 current=crates/ruff_python_formatter/src/statement/stmt_function_def.rs
+[2026-04-13T20:08:13Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=181.0 files_done=25 resolved=1023 errors=2037 current=crates/ruff_python_formatter/src/statement/stmt_with.rs
+[2026-04-13T20:12:32Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=185.3 files_done=26 resolved=1034 errors=2087 current=crates/ruff_server/src/server/api/requests/code_action_resolve.rs
+[2026-04-13T20:15:28Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=188.3 files_done=27 resolved=1049 errors=2121 current=crates/red_knot_python_semantic/src/module/resolver.rs
+[2026-04-13T20:38:53Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=211.7 files_done=28 resolved=1149 errors=2391 current=crates/ruff_linter/src/rules/pyupgrade/rules/deprecated_mock_import.rs
+[2026-04-13T20:46:50Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=219.6 files_done=29 resolved=1189 errors=2482 current=crates/ruff_linter/src/rules/pycodestyle/rules/errors.rs
+[2026-04-13T20:47:42Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=220.5 files_done=30 resolved=1192 errors=2492 current=crates/ruff_linter/src/rules/refurb/rules/reimplemented_starmap.rs
+[2026-04-13T20:54:04Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=226.9 files_done=31 resolved=1210 errors=2566 current=crates/ruff_linter/src/rules/flake8_datetimez/rules/call_date_today.rs
+[2026-04-13T20:54:40Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=227.5 files_done=32 resolved=1213 errors=2573 current=crates/ruff_linter/src/rules/pycodestyle/rules/literal_comparisons.rs
+[2026-04-13T21:02:25Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=235.2 files_done=33 resolved=1231 errors=2662 current=crates/ruff_python_formatter/src/builders.rs
+[2026-04-13T21:04:09Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=236.9 files_done=34 resolved=1249 errors=2682 current=crates/ruff_linter/src/rules/pycodestyle/rules/logical_lines/indentation.rs
+[2026-04-13T21:06:09Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=238.9 files_done=35 resolved=1258 errors=2705 current=crates/ruff_linter/src/rules/pyflakes/rules/break_outside_loop.rs
+[2026-04-13T21:07:54Z] [iter=7] CHECKPOINT TRIGGERED elapsed_min=240.7 files_completed=194 new_files_this_iter=36 mem_mb=2464 MB
+[2026-04-13T21:07:54Z] [iter=7] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/b54922fd7394c36cdc390fd21aaee99206ebc361.nq.gz triples=187002
+[2026-04-13T21:07:58Z] [iter=7] Checkpoint written, exiting with code 7
+[2026-04-13T21:07:58Z] [iter=7] PHASE END: enrich (checkpointed) elapsed_s=14441 elapsed_min=240.7 files_completed=194
