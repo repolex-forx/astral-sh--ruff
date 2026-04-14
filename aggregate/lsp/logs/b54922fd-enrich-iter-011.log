@@ -1,0 +1,66 @@
+[2026-04-14T09:53:02Z] === ENRICH ITERATION 11 START | repo=astral-sh/ruff sha=b54922fd ===
+[2026-04-14T09:53:02Z] [iter=11] PHASE START: enrich repo=astral-sh/ruff sha=b54922fd runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/b54922fd-enrich-iter-011.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/b54922fd7394c36cdc390fd21aaee99206ebc361.nq.gz
+[2026-04-14T09:53:02Z] [iter=11] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-14T09:55:08Z] [iter=11] AST store loaded triples=11609282 load_secs=121 mem_mb=1091 MB
+[2026-04-14T09:55:08Z] [iter=11] Step 2: Finding LSP targets mem_mb=1091 MB
+[2026-04-14T09:55:32Z] [iter=11] LSP targets found call_sites=82537 imports=7864 extends=425 implements=349 secs=24
+[2026-04-14T09:55:44Z] [iter=11] Loaded checkpoint partial graph triples=263490
+[2026-04-14T09:56:05Z] [iter=11] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1097 MB
+[2026-04-14T09:57:23Z] [iter=11] Position index built positions=795749 nodes_with_types=974884 secs=79 mem_mb=2568 MB
+[2026-04-14T09:57:23Z] [iter=11] Step 3: Starting LSP resolution mem_mb=2568 MB already_completed_types=[] already_completed_files=348
+[2026-04-14T09:57:23Z] [iter=11] Resolving target type target_type=call_site count=82537
+[2026-04-14T09:58:37Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=5.6 files_done=0 resolved=0 errors=0 current=crates/ruff_linter/src/rules/refurb/helpers.rs
+[2026-04-14T10:04:36Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=11.6 files_done=1 resolved=2 errors=69 current=crates/ruff_linter/src/rules/flake8_bugbear/rules/static_key_dict_comprehension.rs
+[2026-04-14T10:06:34Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=13.5 files_done=2 resolved=4 errors=95 current=crates/ruff_linter/src/rules/pylint/rules/nested_min_max.rs
+[2026-04-14T10:09:40Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=16.6 files_done=3 resolved=18 errors=136 current=crates/ruff_linter/src/rules/refurb/rules/int_on_sliced_str.rs
+[2026-04-14T10:12:06Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=19.1 files_done=4 resolved=23 errors=168 current=crates/ruff_linter/src/rules/flake8_annotations/rules/definition.rs
+[2026-04-14T10:26:53Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=33.9 files_done=5 resolved=66 errors=365 current=crates/ruff_linter/src/rules/flake8_bandit/rules/shell_injection.rs
+[2026-04-14T10:32:31Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=39.5 files_done=6 resolved=91 errors=440 current=crates/ruff_python_formatter/src/expression/expr_ellipsis_literal.rs
+[2026-04-14T10:33:43Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=40.7 files_done=8 resolved=92 errors=456 current=crates/ruff_linter/src/rules/flake8_pyi/rules/simple_defaults.rs
+[2026-04-14T10:44:19Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=51.3 files_done=9 resolved=105 errors=597 current=crates/ruff/src/commands/rule.rs
+[2026-04-14T10:47:44Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=54.7 files_done=10 resolved=123 errors=642 current=crates/ruff_linter/src/directives.rs
+[2026-04-14T10:58:15Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=65.2 files_done=11 resolved=186 errors=782 current=crates/ruff_linter/src/rules/pylint/helpers.rs
+[2026-04-14T10:59:22Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=66.3 files_done=12 resolved=199 errors=797 current=crates/ruff_linter/src/rules/pylint/rules/subprocess_popen_preexec_fn.rs
+[2026-04-14T11:00:12Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=67.2 files_done=13 resolved=201 errors=808 current=crates/ruff_index/src/idx.rs
+[2026-04-14T11:08:25Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=75.4 files_done=15 resolved=265 errors=917 current=crates/ruff_linter/src/rules/pyupgrade/rules/convert_typed_dict_functional_to_class.rs
+[2026-04-14T11:13:17Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=80.3 files_done=16 resolved=289 errors=982 current=crates/ruff_workspace/src/settings.rs
+[2026-04-14T11:18:37Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=85.6 files_done=17 resolved=300 errors=1053 current=crates/ruff_python_formatter/src/expression/expr_list.rs
+[2026-04-14T11:19:49Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=86.8 files_done=18 resolved=300 errors=1069 current=crates/ruff_server/src/server/api/requests/format.rs
+[2026-04-14T11:23:31Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=90.5 files_done=19 resolved=309 errors=1118 current=crates/ruff_linter/src/rules/flake8_tidy_imports/settings.rs
+[2026-04-14T11:41:41Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=108.6 files_done=21 resolved=335 errors=1360 current=crates/ruff/src/commands/check_stdin.rs
+[2026-04-14T11:43:15Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=110.2 files_done=22 resolved=338 errors=1381 current=crates/ruff_linter/src/rules/flake8_bugbear/rules/setattr_with_constant.rs
+[2026-04-14T11:45:03Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=112.0 files_done=23 resolved=341 errors=1405 current=crates/ruff_linter/src/rules/pyupgrade/rules/open_alias.rs
+[2026-04-14T11:46:06Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=113.1 files_done=24 resolved=345 errors=1419 current=crates/ruff_formatter/src/buffer.rs
+[2026-04-14T11:48:43Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=115.7 files_done=25 resolved=376 errors=1454 current=crates/ruff_server/src/edit/range.rs
+[2026-04-14T11:53:53Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=120.8 files_done=26 resolved=383 errors=1523 current=crates/ruff_linter/src/rules/flake8_use_pathlib/rules/os_path_getmtime.rs
+[2026-04-14T11:56:09Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=123.1 files_done=28 resolved=388 errors=1553 current=crates/ruff_linter/src/rules/flake8_comprehensions/fixes.rs
+[2026-04-14T12:13:19Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=140.3 files_done=29 resolved=581 errors=1782 current=crates/ruff_python_semantic/src/analyze/type_inference.rs
+[2026-04-14T12:21:49Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=148.8 files_done=30 resolved=603 errors=1895 current=crates/ruff_python_semantic/src/scope.rs
+[2026-04-14T12:22:34Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=149.5 files_done=31 resolved=652 errors=1905 current=crates/ruff_linter/src/packaging.rs
+[2026-04-14T12:23:06Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=150.1 files_done=32 resolved=661 errors=1912 current=crates/ruff_db/src/lib.rs
+[2026-04-14T12:24:46Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=151.7 files_done=34 resolved=680 errors=1934 current=crates/ruff_linter/src/rules/pyupgrade/rules/redundant_open_modes.rs
+[2026-04-14T12:27:38Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=154.6 files_done=35 resolved=702 errors=1972 current=crates/ruff_linter/src/rules/flake8_pyi/rules/generic_not_last_base_class.rs
+[2026-04-14T12:29:31Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=156.5 files_done=36 resolved=705 errors=1997 current=crates/ruff_linter/src/fix/edits.rs
+[2026-04-14T12:48:50Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=175.8 files_done=37 resolved=737 errors=2254 current=crates/ruff_python_literal/src/escape.rs
+[2026-04-14T12:52:31Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=179.5 files_done=38 resolved=786 errors=2303 current=crates/ruff_linter/src/rules/flake8_tidy_imports/matchers.rs
+[2026-04-14T12:53:20Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=180.3 files_done=39 resolved=790 errors=2314 current=crates/ruff_linter/src/rules/pyupgrade/rules/unnecessary_future_import.rs
+[2026-04-14T12:56:02Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=183.0 files_done=40 resolved=795 errors=2350 current=crates/ruff_python_parser/src/lexer/cursor.rs
+[2026-04-14T12:57:00Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=184.0 files_done=41 resolved=834 errors=2363 current=crates/ruff_python_ast/src/traversal.rs
+[2026-04-14T12:58:49Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=185.8 files_done=42 resolved=845 errors=2387 current=crates/ruff_server/src/server/api/requests/execute_command.rs
+[2026-04-14T13:01:49Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=188.8 files_done=43 resolved=869 errors=2427 current=crates/ruff_linter/src/rules/ruff/typing.rs
+[2026-04-14T13:07:01Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=194.0 files_done=44 resolved=896 errors=2496 current=crates/ruff_linter/src/rules/isort/rules/organize_imports.rs
+[2026-04-14T13:11:08Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=198.1 files_done=45 resolved=900 errors=2551 current=crates/ruff_linter/src/rules/pyflakes/rules/undefined_local.rs
+[2026-04-14T13:12:16Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=199.2 files_done=46 resolved=902 errors=2566 current=crates/ruff_linter/src/rules/flake8_implicit_str_concat/rules/implicit.rs
+[2026-04-14T13:16:32Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=203.5 files_done=47 resolved=907 errors=2623 current=crates/ruff_linter/src/rules/flake8_simplify/rules/ast_expr.rs
+[2026-04-14T13:22:31Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=209.5 files_done=48 resolved=918 errors=2703 current=crates/ruff_python_formatter/src/string/normalize.rs
+[2026-04-14T13:33:17Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=220.3 files_done=49 resolved=941 errors=2847 current=crates/ruff_linter/src/rules/pep8_naming/rules/mixed_case_variable_in_class_scope.rs
+[2026-04-14T13:34:11Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=221.2 files_done=50 resolved=942 errors=2859 current=crates/red_knot_python_semantic/src/semantic_index/ast_ids.rs
+[2026-04-14T13:40:20Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=227.3 files_done=51 resolved=953 errors=2941 current=crates/ruff_linter/src/rules/refurb/rules/list_reverse_copy.rs
+[2026-04-14T13:43:52Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=230.8 files_done=52 resolved=956 errors=2988 current=crates/ruff_linter/src/rules/flake8_bandit/rules/try_except_continue.rs
+[2026-04-14T13:45:44Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=232.7 files_done=55 resolved=973 errors=3013 current=crates/ruff_linter/src/rules/pylint/rules/unnecessary_dict_index_lookup.rs
+[2026-04-14T13:48:22Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=235.3 files_done=56 resolved=976 errors=3048 current=crates/ruff_macros/src/cache_key.rs
+[2026-04-14T13:50:55Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=237.9 files_done=57 resolved=999 errors=3082 current=crates/ruff_linter/src/rules/ruff/rules/never_union.rs
+[2026-04-14T13:53:37Z] [iter=11] CHECKPOINT TRIGGERED elapsed_min=240.6 files_completed=405 new_files_this_iter=57 mem_mb=2579 MB
+[2026-04-14T13:53:37Z] [iter=11] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/b54922fd7394c36cdc390fd21aaee99206ebc361.nq.gz triples=284505
+[2026-04-14T13:53:44Z] [iter=11] Checkpoint written, exiting with code 7
+[2026-04-14T13:53:44Z] [iter=11] PHASE END: enrich (checkpointed) elapsed_s=14435 elapsed_min=240.6 files_completed=405
