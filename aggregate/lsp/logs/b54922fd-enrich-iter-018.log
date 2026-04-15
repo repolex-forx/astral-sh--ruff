@@ -1,0 +1,40 @@
+[2026-04-15T13:16:59Z] === ENRICH ITERATION 18 START | repo=astral-sh/ruff sha=b54922fd ===
+[2026-04-15T13:16:59Z] [iter=18] PHASE START: enrich repo=astral-sh/ruff sha=b54922fd runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/b54922fd-enrich-iter-018.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/b54922fd7394c36cdc390fd21aaee99206ebc361.nq.gz
+[2026-04-15T13:16:59Z] [iter=18] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-15T13:19:06Z] [iter=18] AST store loaded triples=11609282 load_secs=123 mem_mb=1092 MB
+[2026-04-15T13:19:06Z] [iter=18] Step 2: Finding LSP targets mem_mb=1092 MB
+[2026-04-15T13:19:31Z] [iter=18] LSP targets found call_sites=82537 imports=7864 extends=425 implements=349 secs=25
+[2026-04-15T13:19:52Z] [iter=18] Loaded checkpoint partial graph triples=446402
+[2026-04-15T13:20:14Z] [iter=18] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1543 MB
+[2026-04-15T13:21:35Z] [iter=18] Position index built positions=795749 nodes_with_types=974884 secs=81 mem_mb=3009 MB
+[2026-04-15T13:21:35Z] [iter=18] Step 3: Starting LSP resolution mem_mb=3009 MB already_completed_types=[] already_completed_files=1846
+[2026-04-15T13:21:35Z] [iter=18] Resolving target type target_type=call_site count=82537
+[2026-04-15T13:22:52Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=5.9 files_done=0 resolved=0 errors=0 current=crates/ruff_linter/resources/test/fixtures/pyflakes/F502.py
+[2026-04-15T13:23:25Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=6.4 files_done=16 resolved=35 errors=7 current=crates/ruff_python_formatter/resources/test/fixtures/ruff/statement/function.py
+[2026-04-15T13:24:06Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=7.1 files_done=29 resolved=56 errors=16 current=crates/ruff_linter/resources/test/fixtures/control-flow-graph/for.py
+[2026-04-15T13:24:56Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=8.0 files_done=49 resolved=121 errors=27 current=crates/ruff_linter/resources/test/fixtures/pylint/invalid_all_object.py
+[2026-04-15T13:25:27Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=8.5 files_done=69 resolved=154 errors=33 current=crates/ruff_linter/resources/test/fixtures/flake8_logging_format/G101_1.py
+[2026-04-15T13:26:09Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=9.2 files_done=84 resolved=200 errors=42 current=crates/ruff_linter/resources/test/fixtures/refurb/FURB131.py
+[2026-04-15T13:26:50Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=9.9 files_done=110 resolved=230 errors=51 current=crates/ruff_linter/resources/test/fixtures/flake8_simplify/SIM401.py
+[2026-04-15T13:27:24Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=10.4 files_done=148 resolved=277 errors=58 current=crates/ruff_linter/resources/test/fixtures/flake8_future_annotations/ok_variable_name.py
+[2026-04-15T13:27:56Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=10.9 files_done=173 resolved=298 errors=65 current=crates/ruff_linter/resources/test/fixtures/pyflakes/F821_11.pyi
+[2026-04-15T13:28:33Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=11.6 files_done=181 resolved=305 errors=73 current=crates/ruff_linter/resources/test/fixtures/pyupgrade/UP009_8.py
+[2026-04-15T13:29:11Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=12.2 files_done=228 resolved=355 errors=81 current=crates/ruff_linter/resources/test/fixtures/pyflakes/F702.py
+[2026-04-15T13:29:43Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=12.7 files_done=256 resolved=376 errors=88 current=crates/ruff_linter/resources/test/fixtures/flake8_executable/EXE001_1.py
+[2026-04-15T13:30:16Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=13.3 files_done=297 resolved=402 errors=95 current=crates/ruff_python_formatter/resources/test/fixtures/black/cases/empty_lines.py
+[2026-04-15T13:30:49Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=13.8 files_done=319 resolved=413 errors=102 current=crates/ruff_python_parser/resources/invalid/expressions/dict/missing_closing_brace_2.py
+[2026-04-15T13:31:41Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=14.7 files_done=339 resolved=430 errors=113 current=playground/src/Editor/setupMonaco.tsx
+[2026-04-15T13:32:50Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=15.9 files_done=340 resolved=430 errors=128 current=playground/src/Editor/SourceEditor.tsx
+[2026-04-15T13:33:59Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=17.0 files_done=341 resolved=430 errors=143 current=playground/src/Editor/Editor.tsx
+[2026-04-15T13:36:54Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=19.9 files_done=342 resolved=433 errors=181 current=playground/src/Editor/settings.ts
+[2026-04-15T13:37:26Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=20.4 files_done=343 resolved=443 errors=188 current=playground/api/src/index.ts
+[2026-04-15T13:38:08Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=21.1 files_done=345 resolved=443 errors=197 current=playground/src/Editor/utils.ts
+[2026-04-15T13:38:45Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=21.8 files_done=349 resolved=450 errors=205 current=playground/src/Editor/ShareButton.tsx
+[2026-04-15T13:39:14Z] [iter=18] Target type resolved target_type=call_site resolved=452 errors=211 secs=1059 mem_mb=3014 MB
+[2026-04-15T13:39:14Z] [iter=18] Resolving target type target_type=import_statement count=7864
+[2026-04-15T13:39:15Z] [iter=18] HEARTBEAT target_type=import_statement elapsed_min=22.3 files_done=1 resolved=2 errors=0 current=playground/src/Editor/PrimarySideBar.tsx
+[2026-04-15T13:39:48Z] [iter=18] HEARTBEAT target_type=import_statement elapsed_min=22.8 files_done=499 resolved=1072 errors=0 current=crates/ruff_server/src/server/api/notifications.rs
+[2026-04-15T13:39:56Z] [iter=18] CHECKPOINT TRIGGERED elapsed_min=22.9 files_completed=2346 new_files_this_iter=500 mem_mb=3014 MB
+[2026-04-15T13:39:56Z] [iter=18] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/b54922fd7394c36cdc390fd21aaee99206ebc361.nq.gz triples=456527
+[2026-04-15T13:40:19Z] [iter=18] Checkpoint written, exiting with code 7
+[2026-04-15T13:40:19Z] [iter=18] PHASE END: enrich (checkpointed) elapsed_s=1377 elapsed_min=22.9 files_completed=2346
